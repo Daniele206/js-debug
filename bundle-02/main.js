@@ -29,22 +29,25 @@ console.log(checkAge());
 // 3 - Manca un console log che ci mostri il risusltato e manca il return nella function.
 
 
-// // ESERCIZIO 2
-// function printColorsNumber() {
-//     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-//     console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
-// }
-// printColorsNumber();
+// ESERCIZIO 2
+function printColorsNumber() {
+    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+    console.log(`Nella mia palette ci sono ${colors.length} colori!`);
+};
+printColorsNumber();
+// 1 - Dice quanti contolori ci sono nell'array.
+// 2 - lenght é scritto male.
+// 3 - Non ci sono erroi di logica.
 
 
-// // ESERCIZIO 3
-// function addNumbers() {
-//     const userNumber = prompt('Inserisci un numero');
-//     const total = userNumber + 12;
+// ESERCIZIO 3
+function addNumbers() {
+    const userNumber = prompt('Inserisci un numero');
+    const total = userNumber + 12;
 
-//     console.log(`Il risultato finale è ${total}`);
-// }
-// addNumbers();
+    console.log(`Il risultato finale è ${total}`);
+}
+addNumbers();
 
 
 // // ESERCIZIO 4
