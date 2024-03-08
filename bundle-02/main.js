@@ -13,81 +13,87 @@
 // ESERCIZIO 1
 function checkAge() {
     const myAge = 32;
-    const message = '';
+    let message = '';
 
     if (myAge < 18) {
         message = `Sei troppo giovane! Hai ${myAge} anni!`;
     } else {
         message = 'Hai più di 18 anni!';
     }
+    return message
 }
-checkAge();
+console.log(checkAge());
 
-// ESERCIZIO 2
-function printColorsNumber() {
-    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-    console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
-}
-printColorsNumber();
+// 1 - Controlla se l'etá é maggiore di 18 .
+// 2 - C'é un errore di sintassi, message non puo essere una const ma deve essere una let.
+// 3 - Manca un console log che ci mostri il risusltato e manca il return nella function.
 
 
-// ESERCIZIO 3
-function addNumbers() {
-    const userNumber = prompt('Inserisci un numero');
-    const total = userNumber + 12;
-
-    console.log(`Il risultato finale è ${total}`);
-}
-addNumbers();
+// // ESERCIZIO 2
+// function printColorsNumber() {
+//     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+//     console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
+// }
+// printColorsNumber();
 
 
-// ESERCIZIO 4
-function checkAccess() {
-    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-    const userEmail = prompt('Inserisci il tuo indirizzo email');
+// // ESERCIZIO 3
+// function addNumbers() {
+//     const userNumber = prompt('Inserisci un numero');
+//     const total = userNumber + 12;
 
-    let grantAccess = 'false';
-
-    if (addresses.includes(userEmail)) {
-        grantAccess = 'true';
-    }
-
-    if (grantAccess === true) {
-        console.log('Accesso consentito!');
-    } else {
-        console.log('Accesso negato!');
-    }
-}
-checkAccess();
+//     console.log(`Il risultato finale è ${total}`);
+// }
+// addNumbers();
 
 
-// ESERCIZIO 5 (suggerimento: c'è un solo errore)
-function checkAccessImproved() {
-    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+// // ESERCIZIO 4
+// function checkAccess() {
+//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+//     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    const userEmail = prompt('Inserisci il tuo indirizzo email');
+//     let grantAccess = 'false';
 
-    let grantAccess = 'false';
+//     if (addresses.includes(userEmail)) {
+//         grantAccess = 'true';
+//     }
 
-    for (let i = 0; i < addresses.length; i++) {
-        const email = addresses[i];
+//     if (grantAccess === true) {
+//         console.log('Accesso consentito!');
+//     } else {
+//         console.log('Accesso negato!');
+//     }
+// }
+// checkAccess();
 
-        if (userEmail.length > 5) {
 
-            if (email === userEmail) {
-                grantAccess = 'true';
+// // ESERCIZIO 5 (suggerimento: c'è un solo errore)
+// function checkAccessImproved() {
+//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
 
-            }
+//     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-        }
+//     let grantAccess = 'false';
 
-        if (grantAccess) {
-            console.log('Accesso consentito!');
-        } else {
-            console.log('Accesso negato!');
-        }
-    }
-    checkAccessImproved();
+//     for (let i = 0; i < addresses.length; i++) {
+//         const email = addresses[i];
+
+//         if (userEmail.length > 5) {
+
+//             if (email === userEmail) {
+//                 grantAccess = 'true';
+
+//             }
+
+//         }
+
+//         if (grantAccess) {
+//             console.log('Accesso consentito!');
+//         } else {
+//             console.log('Accesso negato!');
+//         }
+//     }
+//     checkAccessImproved();
 
 
 
