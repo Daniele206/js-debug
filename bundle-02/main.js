@@ -54,24 +54,27 @@ addNumbers();
 // 3 - Manca il parseInt del numero messo dall'utente.
 
 
-// // ESERCIZIO 4
-// function checkAccess() {
-//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+// ESERCIZIO 4
+function checkAccess() {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-//     let grantAccess = 'false';
+    let grantAccess = 'false';
 
-//     if (addresses.includes(userEmail)) {
-//         grantAccess = 'true';
-//     }
+    if (addresses.includes(userEmail)) {
+        grantAccess = true;
+    }
 
-//     if (grantAccess === true) {
-//         console.log('Accesso consentito!');
-//     } else {
-//         console.log('Accesso negato!');
-//     }
-// }
-// checkAccess();
+    if (grantAccess === true) {
+        console.log('Accesso consentito!');
+    } else {
+        console.log('Accesso negato!');
+    }
+}
+checkAccess();
+// 1 - Controlla se la mail inserita àe nella lista delle mail che hanno l'accesso, é invia un messaggio alla console.
+// 2 - C'é un errore di sinatssi (true) o lo scriviamo sempre con le virgolette o sempre senza virgolette(la forma migliore se usiamo un booleano é senza virgolette).
+// 3 - Non ci sono errori di logica.
 
 
 // // ESERCIZIO 5 (suggerimento: c'è un solo errore)
